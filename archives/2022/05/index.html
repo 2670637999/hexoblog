@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!--ＪQuery-->
+
+<script src="/Module/JQuery/jquery.min.js"></script>
+
+
+<!--Vue.js-->
+
+<script src="/Module/vue/vue.js"></script>
+
+<!--饿了么Ｕi-->
+
+<link rel="stylesheet" href="/Module/ElementUi/css/index.css">
+
+
+<script src="/Module/ElementUi/index.js"></script>
+
+
+<!--highlight-->
+
+<link rel="stylesheet" href="/Module/highlight/css/zenburn.css">
+
+
+<script src="/Module/highlight/highlight.min.js"></script>
+
+
+<!--axios-->
+
+<script src="/Module/axios/axios.min.js"></script>
+
+
+<!--评论-->
+
+<script src="/Module/comment/valine/Valine.min.js"></script>
+
+
+<!--主题样式-->
+
+<link rel="stylesheet" href="/Module/style.css">
+
+
+<!--设置页面描述与关键字,封面图片-->
+
+    <meta name="description" content="首页描述" />
+    <meta name="keywords" content="首页关键字" />
+    <title>陈陈菌博客</title>
+    <style>
+        #content #title {
+            background-image: url('/background.jpg');
+        }
+    </style>
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+<body>
+    <div id="app" v-cloak>
+    <div id="content">
+        <el-button type="text" id="nav" icon="el-icon-tickets" @click="visible = !visible"></el-button>
+<el-dialog :visible.sync="visible"  title="前往">
+    <el-input id="searchInput" v-model="input" placeholder="请输入内容"></el-input>
+    <div id="searchResult"></div>
+
+    <br>
+    <div id="Menu">
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/">首页</el-link></el-button></div>
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/archives/archives.html">归档</el-link></el-button></div>
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/about/">关于</el-link></el-button></div>
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/ly/">留言</el-link></el-button></div>
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/">(可新增)</el-link></el-button></div>
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/">(可新增)</el-link></el-button></div>
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/categories/">分类</el-link></el-button></div>
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/tages/">标签</el-link></el-button></div>
+    </div>
+
+</el-dialog>
+
+<el-link href="#top"  id="toTop" class="show" :underline="false" icon="el-icon-top" ></el-link>
+
+
+
+        <div id="title">
+            <h1>
+                陈陈菌博客<br>
+                
+                <p>
+                    <br>
+                </p>
+                
+            </h1>
+        </div>
+
+        
+        <div id="article">
+            <a id="articleTitle" href="/HelloWorld.html">
+                Hello World<br>
+            </a>
+            
+            <br>
+            <span id="indexArticleText">
+                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer ...
+            </span>
+            <p>
+                
+                
+                
+            </p>
+        </div>
+        <hr>
+        
+
+        <div id="index-footer">
+            
+            
+        </div>    
+    </div>
+</div>
+    
+<script src="/Module/main.js"></script>
+
+</body>
+</html>

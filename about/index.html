@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<!--ＪQuery-->
+
+<script src="/Module/JQuery/jquery.min.js"></script>
+
+
+<!--Vue.js-->
+
+<script src="/Module/vue/vue.js"></script>
+
+<!--饿了么Ｕi-->
+
+<link rel="stylesheet" href="/Module/ElementUi/css/index.css">
+
+
+<script src="/Module/ElementUi/index.js"></script>
+
+
+<!--highlight-->
+
+<link rel="stylesheet" href="/Module/highlight/css/zenburn.css">
+
+
+<script src="/Module/highlight/highlight.min.js"></script>
+
+
+<!--axios-->
+
+<script src="/Module/axios/axios.min.js"></script>
+
+
+<!--评论-->
+
+<script src="/Module/comment/valine/Valine.min.js"></script>
+
+
+<!--主题样式-->
+
+<link rel="stylesheet" href="/Module/style.css">
+
+
+<!--设置页面描述与关键字,封面图片-->
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>关于</title>
+    
+    <style>
+        #content #title {
+            background-image: url('/background.jpg');
+        }
+    </style>
+    
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+<body>
+    <div id="app" v-cloak>
+    <div id="content">
+        <el-button type="text" id="nav" icon="el-icon-tickets" @click="visible = !visible"></el-button>
+<el-dialog :visible.sync="visible"  title="前往">
+    <el-input id="searchInput" v-model="input" placeholder="请输入内容"></el-input>
+    <div id="searchResult"></div>
+
+    <br>
+    <div id="Menu">
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/">首页</el-link></el-button></div>
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/archives/archives.html">归档</el-link></el-button></div>
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/about/">关于</el-link></el-button></div>
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/ly/">留言</el-link></el-button></div>
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/">(可新增)</el-link></el-button></div>
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/">(可新增)</el-link></el-button></div>
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/categories/">分类</el-link></el-button></div>
+      <div class="grid-content bg-purple"><el-button><el-link :underline="false" href="/tages/">标签</el-link></el-button></div>
+    </div>
+
+</el-dialog>
+
+<el-link href="#top"  id="toTop" class="show" :underline="false" icon="el-icon-top" ></el-link>
+
+
+        <div id="title">
+            <h1>
+                <span style="font-size: 1em;">
+                    关于<br>
+                </span>
+                
+                <p style="margin-top: 10px;">
+                    玫瑰花如果跟蝴蝶交朋友的话，就得忍耐两三只毛毛虫的拜访 —《小王子》<br>
+                </p>
+                
+            </h1>
+        </div>
+
+        <div id="article">
+            <p>嘿，欢迎来到我的博客，你可以叫我陈杰海或陈陈君（这是我的网名）。某专科院校计算机相关专业的学生，一个00后。祖籍广东廉江，现居深圳。</p>
+<p>这里是我在互联网上的一个小家。因为平时喜欢钻研软件，经常把技术学习相关的内容写到这里。可以是笔记，也可以是技术心得，或杂七杂八。</p>
+<p>平时爱玩游戏，除了折腾电脑。就是搞音乐。一个喜欢听轻音乐却又喜欢后摇滚的人。</p>
+<img width="50%" height="50%" src="/favicon.ico"/>
+
+<p>我的github：<a target="_blank" rel="noopener" href="https://github.com/2670637999">https://github.com/2670637999</a><br>我的新博客：<a target="_blank" rel="noopener" href="https://blog.glumi.cn/">https://blog.glumi.cn</a><br>这个主题地址：<a target="_blank" rel="noopener" href="https://github.com/2670637999/hexo-theme-scroll">https://github.com/2670637999/hexo-theme-scroll</a></p>
+   
+            <br>
+        </div>
+    </div>
+</div>
+    
+<script src="/Module/main.js"></script>
+
+</body>
+</html>
